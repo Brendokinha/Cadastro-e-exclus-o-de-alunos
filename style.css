@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --pink-accent: #ff5c8a;
+    --pink-light: #ffc2d1;
+    --pink-border: #6b0f24;
+    --pink-dark: #4a0918;
+    --bg-paper: rgba(255, 255, 255, 0.94);
+    --text-color: #331e24;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
+    line-height: 1.5;
+    min-height: 100vh;
+
+   
+    background: url('img/free bg @marem.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    max-width: 540px;
+    margin: 30px auto;
+    padding: 32px;
+    background: var(--bg-paper);
+    border: 3px solid var(--pink-border);
+    border-radius: 16px;
+    box-shadow: 
+        7px 7px 0px var(--pink-border),
+        0 12px 30px rgba(107, 15, 36, 0.15);
+    position: relative;
+    backdrop-filter: blur(4px);
+}
+
+/* Etiqueta superior estilo fita adesiva / marker */
+.etiqueta {
+    display: inline-block;
+    color: #ffffff;
+    background: var(--pink-border);
+    padding: 4px 14px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 4px 12px 4px 12px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+h1 {
+    font-family: 'Patrick Hand', cursive;
+    color: var(--pink-border);
+    font-size: 36px;
+    margin: 8px 0 2px 0;
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: 'Patrick Hand', cursive;
+    color: var(--pink-border);
+    font-size: 30px;
+    margin: 8px 0 10px 0;
+}
+
+p {
+    color: #55333c;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+
+section + section {
+    margin-top: 28px;
+    border-top: 2px dashed var(--pink-light);
+    padding-top: 22px;
+}
+
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--pink-dark);
+}
+
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    background: #ffffff;
+    color: var(--text-color);
+    border: 2px solid #e2b6c1;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+input::placeholder {
+    color: #b08d96;
+    font-weight: 500;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--pink-border);
+    background: #fff8fa;
+    box-shadow: 
+        0 0 0 3px rgba(255, 92, 138, 0.2),
+        3px 3px 0px var(--pink-light);
+}
+
+
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 24px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border: 3px solid var(--pink-border);
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--pink-border);
+    transition: all 0.15s ease-in-out;
+}
+
+
+#botao {
+    background: var(--pink-accent);
+    color: #ffffff;
+}
+
+#botao:hover {
+    background: #ff477e;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--pink-border);
+}
+
+#botao:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--pink-border);
+}
+
+
+#botao-excluir {
+    background: var(--pink-border);
+    color: #ffffff;
+}
+
+#botao-excluir:hover {
+    background: var(--pink-dark);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #24030a;
+}
+
+#botao-excluir:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--pink-border);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none !important;
+    box-shadow: 3px 3px 0px var(--pink-border) !important;
+}
+
+
+#mensagem {
+    padding: 14px 18px;
+    border: 2px solid #e0a100;
+    background: #fffde6;
+    color: #7a5700;
+    border-radius: 10px;
+    margin-top: 22px;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 4px 4px 0px #e0a100;
+}
+
+
+.nota {
+    font-size: 12px;
+    color: #88626c;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
